@@ -7,27 +7,30 @@
 </head>
 <body>
 
-    <h1> Admission Form</h1><br>
-
-    <form action="https://bbc.co.uk">   <!-- This should be the address of my server -->
-                         <!-- This means, when we send this form, the data goes here --> 
+    <h1> Admission Form</h1><br> 
+    <form action="https://bbc.co.uk">                               <!-- This should be the address of my server -->
+                                                                    <!-- This means, when we send this form, the data goes here --> 
         <h1>Create account</h1>
-            <table>
+            <table>                                                 <!-- Using a table inside a form for formatting -->
                 <tr>
                     <td>First Name: </td>
-                    <td><input type="text"></td>
+                    <td><input type="text" required></td>
                 </tr>
                 <tr>
                     <td>Last Name: </td>
-                    <td><input type="text"></td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td><input type="email" required></td>
                 </tr>
                 <tr>
                     <td>User Name: </td>
-                    <td><input type="text"></td>
+                    <td><input type="text" required></td>
                 </tr>
                 <tr>
                     <td>Password:</td>
-                    <td><input type="password"></td>                <!-- Hides password -->
+                    <td><input type="password" required></td>                 <!-- Hides password -->
                 </tr>
             </table>
        
@@ -38,12 +41,12 @@
         <input type="radio" name="UKLocation"> Northern Ireland <br> <!-- Pick from list (single choice) -->
 
         <h2>What sport do you play?</h2>
-        <input type="checkbox"> Cricket <br>             <!-- Pick multiple from list -->
-        <input type="checkbox"> Hockey <br>              <!-- Pick multiple from list -->
-        <input type="checkbox"> Football <br>            <!-- Pick multiple from list -->
-        <input type="checkbox"> Tennis <br>              <!-- Pick multiple from list -->
+        <input type="checkbox"> Cricket <br>                         <!-- Pick multiple from list -->
+        <input type="checkbox"> Hockey <br>                          <!-- Pick multiple from list -->
+        <input type="checkbox"> Football <br>                        <!-- Pick multiple from list -->
+        <input type="checkbox"> Tennis <br>                          <!-- Pick multiple from list -->
         
-        <br><input type="submit">                            <!-- Creates a submit button -->
+        <br><input type="submit">                                    <!-- Creates a submit button -->
     </form>
 </body>
 </html>
