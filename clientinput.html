@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1> Admission Form</h1><br>
+
+    <form action="https://bbc.co.uk">   <!-- This should be the address of my server -->
+                         <!-- This means, when we send this form, the data goes here --> 
+        <h1>Create account</h1>
+            <table>
+                <tr>
+                    <td>First Name: </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Last Name: </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>User Name: </td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password"></td>                <!-- Hides password -->
+                </tr>
+            </table>
+       
+        <h2>UK Location</h2>
+        <input type="radio" name="UKLocation"> England          <br> <!-- Pick from list (single choice) -->
+        <input type="radio" name="UKLocation"> Scotland         <br> <!-- Pick from list (single choice) -->
+        <input type="radio" name="UKLocation"> Wales            <br> <!-- Pick from list (single choice) -->
+        <input type="radio" name="UKLocation"> Northern Ireland <br> <!-- Pick from list (single choice) -->
+
+        <h2>What sport do you play?</h2>
+        <input type="checkbox"> Cricket <br>             <!-- Pick multiple from list -->
+        <input type="checkbox"> Hockey <br>              <!-- Pick multiple from list -->
+        <input type="checkbox"> Football <br>            <!-- Pick multiple from list -->
+        <input type="checkbox"> Tennis <br>              <!-- Pick multiple from list -->
+        
+        <br><input type="submit">                            <!-- Creates a submit button -->
+    </form>
+</body>
+</html>
