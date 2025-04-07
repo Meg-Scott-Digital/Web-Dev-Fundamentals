@@ -12,7 +12,7 @@
             outline:6px double  #F38C79;
         }
         section, footer, header {background-color: #FFC1B4;}
-        h1, h2, h3, p, li {
+        h1, h2, h3, h4, p, li {
             color: #007074;
             font-family: Arial, Helvetica, sans-serif; 
             font-weight: bold;
@@ -20,6 +20,16 @@
         }
         h1, h2 {
             text-shadow: -2px 2px 2px #ffffff; 
+        }
+        footer, header {
+            text-align: center; padding-top: 5px; padding-bottom: 5px;
+        }
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2.center, h3.center, h4.center {
+            text-align: center;
         }
     </style>
 </head>
@@ -37,27 +47,49 @@ Using what you've learned of css so far attempt to style your about me page
             <h1>About Me</h1>
         </header>
         <section>
-            <table>
+            <table class="center">
                 <tr>
                     <td>
-                        <img src="./03_Images/solution/images/Laurence.png" alt="Laurence Sharp">
+                        <img style="margin-right: 30px;" src="./03_Images/solution/images/Laurence.png" alt="Laurence Sharp">
                     </td>
                     <td>
-                        <h2>I'm a super cool person</h2>
-                        <p><h3>Really, just the coolest. *Fingerguns*</h3></p>
+                        <h2 class="center">I'm a super cool person</h2>
+                        <p><h3 class="center">Really, just the coolest. *Fingerguns*</h3>
+                        <h4 class="center">(This is a photo of some random guy already in my repo)</h4></p>
+                    </td>
+                    <td>
+                        <img style="margin-left: 30px;" src="./03_Images/solution/images/Laurence.png" alt="Laurence Sharp">
                     </td>
                 </tr>
             </table>
         </section>
         <section>
-            <h2>Hobbies</h2>
-            <ul style="list-style-type: disc;"><h3>
-                <li>Dungeons and Dragons fanatic</li>
-                <li>Collector of notebooks</li>
-                <li>Cozy game enthusiast</li>
-                <li>Drinker of hot beverages</li>
-                <li>Weeps at Pixar movies</li>
-            </h3></ul>
+                <table class="center">
+                    <tr>
+                        <td>
+                            <h2 class="center">Hobbies</h2>
+                            <ul style="list-style-type: disc;"><h3>
+                                <li>Dungeons and Dragons fanatic</li>
+                                <li>Collector of notebooks</li>
+                                <li>Cozy game enthusiast</li>
+                                <li>Drinker of hot beverages</li>
+                                <li>Weeps at Pixar movies</li>
+                            </h3></ul> 
+                        </td>
+                    </tr>
+                </table>
+                <table class="center">
+                    <tr>
+                        <td>
+                            <h2 class="center">Fave songs</h2>
+                            <ul style="list-style-type: disc;"><h3>
+                                <li>Too Sweet - Hozier</li>
+                                <li>Irish Eyes - Rosie Betts</li>
+                                <li>Bleeding Out - Imagine Dragons</li>
+                            </h3></ul> 
+                        </td>
+                    </tr>
+                </table>
         </section>
         <footer>
             <p><h3>By Meg, coder extraordinaire (in progress)</h3></p> 
