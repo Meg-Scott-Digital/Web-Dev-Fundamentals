@@ -31,6 +31,23 @@
         h2.center, h3.center, h4.center {
             text-align: center;
         }
+        #Law1 {
+            animation: myAnim 2s linear 1s 1 normal forwards;
+        }
+        @keyframes myAnim {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+
+
     </style>
 </head>
 
@@ -50,7 +67,7 @@ Using what you've learned of css so far attempt to style your about me page
             <table class="center">
                 <tr>
                     <td>
-                        <img style="margin-right: 30px;" src="./03_Images/solution/images/Laurence.png" alt="Laurence Sharp">
+                        <img animation: myAnim 10s linear 1s infinite normal forwards; style="margin-right: 30px;" src="./03_Images/solution/images/Laurence.png" alt="Laurence Sharp">
                     </td>
                     <td>
                         <h2 class="center">I'm a super cool person</h2>
@@ -58,7 +75,7 @@ Using what you've learned of css so far attempt to style your about me page
                         <h4 class="center">(This is a photo of some random guy already in my repo)</h4></p>
                     </td>
                     <td>
-                        <img style="margin-left: 30px;" src="./03_Images/solution/images/Laurence.png" alt="Laurence Sharp">
+                        <img animation: myAnim 10s linear 1s infinite normal forwards; style="margin-left: 30px;" src="./03_Images/solution/images/Laurence.png" alt="Laurence Sharp">
                     </td>
                 </tr>
             </table>
