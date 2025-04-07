@@ -12,7 +12,15 @@
             outline:6px double  #F38C79;
         }
         section, footer, header {background-color: #FFC1B4;}
-        h1, h2, p, li {color: #007074;}
+        h1, h2, h3, p, li {
+            color: #007074;
+            font-family: Arial, Helvetica, sans-serif; 
+            font-weight: bold;
+            text-shadow: #034C53;
+        }
+        h1, h2 {
+            text-shadow: -2px 2px 2px #ffffff; 
+        }
     </style>
 </head>
 
@@ -29,21 +37,30 @@ Using what you've learned of css so far attempt to style your about me page
             <h1>About Me</h1>
         </header>
         <section>
-            <h2>I'm a super cool person</h2>
-            <p>Really, just the coolest. *Fingerguns*</p>
+            <table>
+                <tr>
+                    <td>
+                        <img src="./03_Images/solution/images/Laurence.png" alt="Laurence Sharp">
+                    </td>
+                    <td>
+                        <h2>I'm a super cool person</h2>
+                        <p><h3>Really, just the coolest. *Fingerguns*</h3></p>
+                    </td>
+                </tr>
+            </table>
         </section>
         <section>
             <h2>Hobbies</h2>
-            <ul>
+            <ul style="list-style-type: disc;"><h3>
                 <li>Dungeons and Dragons fanatic</li>
                 <li>Collector of notebooks</li>
                 <li>Cozy game enthusiast</li>
                 <li>Drinker of hot beverages</li>
                 <li>Weeps at Pixar movies</li>
-            </ul>
+            </h3></ul>
         </section>
         <footer>
-            <p>By Meg, coder extraordinaire (in progress)</p> 
+            <p><h3>By Meg, coder extraordinaire (in progress)</h3></p> 
         </footer>
     </article>
 </body>
