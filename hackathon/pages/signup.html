@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="/hackathon/styles/qacinemas.css">
+</head>
+<body>
+    <header class="container">
+        <nav class="navbar">
+            <a class="nav-link" href="index.html">QA</a>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="schedule.html">Schedule</a>
+            <a class="nav-current" href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <article>
+
+        <section class ="container">
+            <img class ="container" src="/hackathon/assets/signup.jpg" alt="Sign up">
+        </section>
+
+        <form action="https://bbc.co.uk">                              
+
+            <table>                                                 
+                <tr>
+                    <td>Title</td>
+                    <td><select required>
+                        <option>Mr</option>
+                        <option>Miss</option>
+                        <option>Mrs</option>
+                        <option>Mx</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>First Name: </td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name: </td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Email: </td>                                
+                    <td><input type="email" required></td>          <!-- Email validation -->
+                </tr>
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" required></td>           <!-- Validates date, creates calendar input -->
+                </tr>
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="tel" required></td>           <!-- Validates date, creates calendar input -->
+                </tr>
+            </table>
+            
+            <input type="radio" name="gender"> Male <br>                        
+            <input type="radio" name="gender"> Female <br>                          
+           
+
+            <br><input type="button"><br>                                <!-- Creates a button, needs to be coded in JavaScript -->
+                        <!-- This is as you can't define function in HTML -->
+
+            <br><input type="submit">                                    <!-- Creates a submit button -->
+</form>
+
+    </article>
+
+
+</body>
+</html>
